@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMIUM ACADEMY</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div style="text-align:center; background-color:#004f9f; padding:20px; color:white;">
+            <h1>PREMIUM ACADEMY</h1>
+            <nav>
+                <ul style="list-style:none; padding:0; text-align:center;">
+                    <li style="display:inline; margin:0 15px;"><a href="#home" style="color:white; text-decoration:none;">হোম</a></li>
+                    <li style="display:inline; margin:0 15px;"><a href="#courses" style="color:white; text-decoration:none;">কোর্স</a></li>
+                    <li style="display:inline; margin:0 15px;"><a href="#registration" style="color:white; text-decoration:none;">রেজিস্ট্রেশন</a></li>
+                    <li style="display:inline; margin:0 15px;"><a href="#gallery" style="color:white; text-decoration:none;">ভিডিও গ্যালারি</a></li>
+                    <li style="display:inline; margin:0 15px;"><a href="#faq" style="color:white; text-decoration:none;">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" style="background-color:#004f9f; color:white; padding:50px; text-align:center;">
+        <h2>স্বাগতম PREMIUM ACADEMY-তে!</h2>
+        <p>আপনার শিক্ষার জন্য সেরা কোর্স পেতে এখানে ক্লিক করুন</p>
+        <a href="#courses" style="background-color:#ff5b5b; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; font-size:18px;">কোর্স দেখুন</a>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" style="background-color:#ffffff; padding:50px; text-align:center;">
+        <h2>আমাদের কোর্সসমূহ</h2>
+        <div style="display:inline-block; width:45%; margin:20px; background-color:#f4f4f4; padding:20px; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+            <img src="course1.jpg" alt="Course Image" style="width:100%; height:auto; border-radius:8px;">
+            <h3>SSC কোর্স</h3>
+            <p>বিজ্ঞান, মানবিক, ব্যবসায় শিক্ষা বিভাগে ক্লাস</p>
+            <a href="#registration" style="background-color:#004f9f; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">রেজিস্ট্রেশন করুন</a>
+        </div>
+        <div style="display:inline-block; width:45%; margin:20px; background-color:#f4f4f4; padding:20px; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+            <img src="course2.jpg" alt="Course Image" style="width:100%; height:auto; border-radius:8px;">
+            <h3>HSC কোর্স</h3>
+            <p>বিজ্ঞান, ব্যবসায় শিক্ষা বিভাগে ক্লাস</p>
+            <a href="#registration" style="background-color:#004f9f; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">রেজিস্ট্রেশন করুন</a>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" style="background-color:#f9f9f9; padding:50px;">
+        <div style="text-align:center;">
+            <h2>রেজিস্ট্রেশন ফর্ম</h2>
+            <form action="/submit" method="POST" style="width:50%; margin:0 auto;">
+                <label for="name">নাম:</label><br>
+                <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px;"><br>
+                
+                <label for="email">ইমেইল:</label><br>
+                <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px;"><br>
+
+                <label for="course">কোর্স নির্বাচন করুন:</label><br>
+                <select id="course" name="course" style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px;">
+                    <option value="ssc">SSC কোর্স</option>
+                    <option value="hsc">HSC কোর্স</option>
+                </select><br>
+
+                <button type="submit" style="background-color:#004f9f; color:white; padding:10px 20px; border-radius:5px;">রেজিস্টার করুন</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section id="gallery" style="background-color:#ffffff; padding:50px; text-align:center;">
+        <h2>আমাদের কোর্সের ভিডিও</h2>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" style="background-color:#f9f9f9; padding:50px;">
+        <div style="text-align:center;">
+            <h2>প্রশ্নোত্তর</h2>
+            <div style="margin-bottom:20px;">
+                <h3>কোর্সের ফি কত?</h3>
+                <p>ফি সম্পর্কে বিস্তারিত জানার জন্য আমাদের সাইটের ফি সেকশন দেখুন।</p>
+            </div>
+            <div>
+                <h3>কোর্সের মেয়াদ কত?</h3>
+                <p>SSC কোর্সের মেয়াদ ৬ মাস, HSC কোর্সের মেয়াদ ১ বছর।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color:#004f9f; color:white; padding:20px; text-align:center;">
+        <p>&copy; 2025 PREMIUM ACADEMY - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
